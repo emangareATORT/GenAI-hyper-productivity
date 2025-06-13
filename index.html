@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI hyper-productivity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Simple animation for cards */
+        .card {
+            transition: box-shadow 0.2s ease-in-out;
+        }
+        .card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .icon-container {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             flex-shrink: 0;
+             height: 2rem; /* 32px */
+             width: 2rem; /* 32px */
+             border-radius: 9999px; /* rounded-full */
+        }
+        .description {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+        }
+        .description.open {
+            max-height: 500px; /* Adjust as needed */
+            margin-top: 0.75rem; /* 12px */
+        }
+        .chevron {
+            transition: transform 0.3s ease-in-out;
+        }
+        .chevron.open {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <header class="text-center mb-8 md:mb-12">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">Hiperproductividad con GenAI</h1>
+            <p class="mt-2 text-base sm:text-lg text-gray-600">Apps, modelos y plataformas curadas basadas en los insights y preferencias de @emangare.</p>
+            <p class="mt-1 text-sm text-gray-500">Haz clic para ver detalles</p>
+        </header>
+
+        <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+            
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-indigo-100 text-indigo-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-indigo-800 mb-1">Texto, casos simples y rápidos</h2>
+                            <p class="font-semibold text-base text-gray-600">GPT 4o 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Ideal para respuestas rápidas, resúmenes y tareas de texto simples donde la velocidad es clave.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-pink-100 text-pink-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.562L16.25 21.75l-.648-1.188a2.25 2.25 0 01-1.47-1.47L12.75 18l1.188-.648a2.25 2.25 0 011.47-1.47L16.25 15l.648 1.188a2.25 2.25 0 011.47 1.47L19.5 18l-1.188.648a2.25 2.25 0 01-1.47 1.47z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-pink-800 mb-1">Texto creativo, humano, empático</h2>
+                            <p class="font-semibold text-base text-gray-600">GPT 4.5 o Claude Sonnet 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Para borradores que necesitan un toque más humano, como correos electrónicos, guiones o contenido para redes sociales.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                         <div class="icon-container bg-green-100 text-green-600">
+                             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-green-800 mb-1">Coedición de texto</h2>
+                            <p class="font-semibold text-base text-gray-600">GPT 4o + Canvas 🆓</p>
+                        </div>
+                    </div>
+                     <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Perfecto para la edición colaborativa en tiempo real. La IA sugiere y corrige mientras escribes.</div>
+            </div>
+            
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                 <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-blue-100 text-blue-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V8.25a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 8.25v7.5a2.25 2.25 0 002.25 2.25z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-blue-800 mb-1">Preguntas difíciles, Razonamiento, Resolución de problemas</h2>
+                            <p class="font-semibold text-base text-gray-600">GPT o3 / o3-pro</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Úsalo para problemas complejos que requieren análisis profundo, lógica y múltiples pasos de razonamiento.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-purple-100 text-purple-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-purple-800 mb-1">Investigación profunda</h2>
+                            <p class="font-semibold text-base text-gray-600">ChatGPT 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Cuando necesitas investigar un tema en profundidad, conectando y analizando información de múltiples fuentes.</div>
+            </div>
+            
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-yellow-100 text-yellow-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5h-6a6 6 0 016-6v-1.5m6 7.5v3.75m-3.75 0h-1.5a1.5 1.5 0 01-1.5-1.5v-1.5a1.5 1.5 0 011.5-1.5h1.5v-1.5A6 6 0 006 7.5v1.5a6 6 0 006 6z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-yellow-800 mb-1">Search + LLM</h2>
+                            <p class="font-semibold text-base text-gray-600">Perplexity 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Combina la búsqueda tradicional con una IA conversacional para respuestas más directas.</div>
+            </div>
+            
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-teal-100 text-teal-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-teal-800 mb-1">Código</h2>
+                            <p class="font-semibold text-base text-gray-600">Claude Sonnet 4 / Gemini 2.5 Pro / GPT o3 & 4.1</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Para escribir, depurar y entender código en varios lenguajes de programación.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                 <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-indigo-100 text-indigo-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-indigo-800 mb-1">Codificar y ejecutar apps simples</h2>
+                            <p class="font-semibold text-base text-gray-600">Gemini 2.5 Pro + Canvas</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Entorno integrado para codificar y ejecutar aplicaciones simples de inmediato.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-pink-100 text-pink-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5h-6a6 6 0 016-6v-1.5m6 7.5v3.75m-3.75 0h-1.5a1.5 1.5 0 01-1.5-1.5v-1.5a1.5 1.5 0 011.5-1.5h1.5v-1.5A6 6 0 006 7.5v1.5a6 6 0 006 6z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-pink-800 mb-1">Conversación por voz</h2>
+                            <p class="font-semibold text-base text-gray-600">ChatGPT Advanced Voice</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Para conversaciones de voz naturales y en tiempo real con una IA.</div>
+            </div>
+            
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-green-100 text-green-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-green-800 mb-1">Chatear y consultar un video de YouTube</h2>
+                            <p class="font-semibold text-base text-gray-600">NotebookLM 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Te permite hacer preguntas sobre el contenido de un video de YouTube sin tener que verlo.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-blue-100 text-blue-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-blue-800 mb-1">Combinar múltiples fuentes como conocimiento</h2>
+                            <p class="font-semibold text-base text-gray-600">NotebookLM 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Consolida información de varios documentos y fuentes para construir una base de conocimiento unificada.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-purple-100 text-purple-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5h-6a6 6 0 016-6v-1.5m6 7.5v3.75m-3.75 0h-1.5a1.5 1.5 0 01-1.5-1.5v-1.5a1.5 1.5 0 011.5-1.5h1.5v-1.5A6 6 0 006 7.5v1.5a6 6 0 006 6z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-purple-800 mb-1">Voz a texto</h2>
+                            <p class="font-semibold text-base text-gray-600">ChatGPT “mic” 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Transcribe palabras habladas a texto de forma rápida y precisa.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-yellow-100 text-yellow-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-yellow-800 mb-1">Contenido estilo infografía</h2>
+                            <p class="font-semibold text-base text-gray-600">Gemini 2.5 + Canvas 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Genera contenido visualmente atractivo similar a las infografías para presentar datos.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-teal-100 text-teal-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-teal-800 mb-1">Generación de imágenes y detección de objetos</h2>
+                            <p class="font-semibold text-base text-gray-600">GPT4o 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Crea imágenes a partir de prompts de texto y puede identificar objetos dentro de las imágenes.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                 <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-indigo-100 text-indigo-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9A2.25 2.25 0 0013.5 5.25h-9A2.25 2.25 0 002.25 7.5v9A2.25 2.25 0 004.5 18.75z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-indigo-800 mb-1">Generación de video</h2>
+                            <p class="font-semibold text-base text-gray-600">Veo 3 + Flow (Google)</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Genera clips de video a partir de prompts de texto o imágenes.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-pink-100 text-pink-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25A2.25 2.25 0 015.25 3h13.5A2.25 2.25 0 0121 5.25z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-pink-800 mb-1">Compartir mi pantalla para recibir consejos</h2>
+                            <p class="font-semibold text-base text-gray-600">Google AI Studio 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Permite que una IA vea tu pantalla y te brinde ayuda y consejos contextuales.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-green-100 text-green-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c1.356 0 2.673-.174 3.92-1.002M12 3c-1.356 0-2.673.174-3.92 1.002M12 3c.429 0 .855.032 1.274.095M12 3a8.962 8.962 0 015.253 1.547M12 3a8.962 8.962 0 00-5.253 1.547M3.75 6.75A9 9 0 0121.25 6.75" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-green-800 mb-1">Investigación sobre datos en tiempo real (X)</h2>
+                            <p class="font-semibold text-base text-gray-600">Grok 3 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Especializado en acceder y procesar datos en tiempo real de plataformas sociales como X.</div>
+            </div>
+            
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-blue-100 text-blue-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-blue-800 mb-1">Leer en voz alta</h2>
+                            <p class="font-semibold text-base text-gray-600">ElevenLabs (ElevenReader mobile) 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Convierte texto escrito en voz con sonido natural.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-purple-100 text-purple-600">
+                             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h18M16.5 3L21 7.5m0 0L16.5 12M21 7.5H3" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-purple-800 mb-1">Probar la respuesta de varios modelos</h2>
+                            <p class="font-semibold text-base text-gray-600">Poe 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Una plataforma para comparar respuestas de múltiples modelos de IA al mismo prompt.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-yellow-100 text-yellow-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-yellow-800 mb-1">Chats preconfigurados</h2>
+                            <p class="font-semibold text-base text-gray-600">GPTs on ChatGPT o Bots en Poe</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Bots o agentes personalizables preconfigurados para tareas o dominios específicos.</div>
+            </div>
+            
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-teal-100 text-teal-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 7.5h-.75A2.25 2.25 0 004.5 9.75v7.5a2.25 2.25 0 002.25 2.25h7.5a2.25 2.25 0 002.25-2.25v-7.5a2.25 2.25 0 00-2.25-2.25h-.75m-6 3.75l3 3m0 0l3-3m-3 3V1.5m9 5.25l-3-3m0 0l-3 3m3-3v11.25" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-teal-800 mb-1">Infografías para diapositivas</h2>
+                            <p class="font-semibold text-base text-gray-600">napkin.ai 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Crea infografías y visuales de aspecto profesional específicamente para presentaciones.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-indigo-100 text-indigo-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5M15 15l5.25 5.25" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-indigo-800 mb-1">Pasos múltiples / Agentes</h2>
+                            <p class="font-semibold text-base text-gray-600">Manus 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Para tareas complejas que requieren que una IA realice una secuencia de acciones o pasos.</div>
+            </div>
+            
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-pink-100 text-pink-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-pink-800 mb-1">Podcast de audio</h2>
+                            <p class="font-semibold text-base text-gray-600">NotebookLM 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Analiza y resume contenido de audio como podcasts, permitiéndote consultarlos.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-red-100 text-red-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-red-800 mb-1">Jugar con la configuración de LLM</h2>
+                            <p class="font-semibold text-base text-gray-600">OpenAI Playground o Google AI Studio 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Entornos de prueba para que los desarrolladores y entusiastas experimenten con los parámetros del modelo.</div>
+            </div>
+
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-gray-100 text-gray-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L12 15.25l5.571-3m-11.142 0l5.571 3 5.571-3M3.25 12l8.75 4.75L20.75 12M3.25 12l8.75-4.75L20.75 12" />
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-gray-800 mb-1">Proyectos con múltiples chats y archivos</h2>
+                            <p class="font-semibold text-base text-gray-600">Claude Project o ChatGPT Projects</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Gestiona proyectos complejos con múltiples conversaciones y archivos subidos en un único espacio de trabajo.</div>
+            </div>
+            
+            <!-- Card Item -->
+            <div class="card bg-white rounded-xl border border-gray-200 p-4 shadow-sm cursor-pointer">
+                <div class="flex items-start justify-between">
+                    <div class="flex items-start">
+                        <div class="icon-container bg-cyan-100 text-cyan-600">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <h2 class="font-bold text-lg text-cyan-800 mb-1">Generación de música</h2>
+                            <p class="font-semibold text-base text-gray-600">Suno + Lalal.ai + Kits.ai 🆓</p>
+                        </div>
+                    </div>
+                    <svg class="chevron h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                </div>
+                <div class="description text-gray-500 text-sm">Crea música original, separa pistas y genera voces de IA para canciones.</div>
+            </div>
+
+        </main>
+        
+        <footer class="text-center mt-8 md:mt-12 text-sm text-gray-500">
+            <p>13/Jun/2025 / Descargo de responsabilidad: esto puede cambiar en una semana</p>
+            <p class="mt-2">🆓 = tiene una versión gratuita</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const description = card.querySelector('.description');
+                    const chevron = card.querySelector('.chevron');
+                    
+                    if (description) {
+                        description.classList.toggle('open');
+                    }
+                    if (chevron) {
+                        chevron.classList.toggle('open');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
