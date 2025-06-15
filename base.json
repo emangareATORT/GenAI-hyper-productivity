@@ -1,0 +1,141 @@
+{
+  "title": "Hiperproductividad con GenAI",
+  "subtitle": "Apps, modelos y plataformas curadas basadas en los insights y preferencias de @emangare.",
+  "details_prompt": "Haz clic para ver detalles",
+  "tools": [
+    {
+      "category": "Texto, casos simples y rápidos",
+      "platforms": "GPT 4o 🆓",
+      "description": "Ideal para respuestas rápidas, resúmenes y tareas de texto simples donde la velocidad es clave."
+    },
+    {
+      "category": "Texto creativo, humano, empático",
+      "platforms": "GPT 4.5 o Claude Sonnet  ",
+      "description": "Para borradores que necesitan un toque más humano, como correos electrónicos, guiones o contenido para redes sociales."
+    },
+    {
+      "category": "Coedición de texto",
+      "platforms": "GPT 4o + Canvas 🆓",
+      "description": "Perfecto para la edición colaborativa en tiempo real. La IA sugiere y corrige mientras escribes."
+    },
+    {
+      "category": "Preguntas difíciles, Razonamiento, Resolución de problemas",
+      "platforms": "GPT o3 / o3-pro",
+      "description": "Úsalo para problemas complejos que requieren análisis profundo, lógica y múltiples pasos de razonamiento."
+    },
+    {
+      "category": "Investigación profunda",
+      "platforms": "ChatGPT 🆓",
+      "description": "Cuando necesitas investigar un tema en profundidad, conectando y analizando información de múltiples fuentes."
+    },
+    {
+      "category": "Search + LLM",
+      "platforms": "Perplexity 🆓",
+      "description": "Combina la búsqueda tradicional con una IA conversacional para respuestas más directas."
+    },
+    {
+      "category": "Conversación por voz",
+      "platforms": "ChatGPT Advanced Voice",
+      "description": "Para conversaciones de voz naturales y en tiempo real con una IA."
+    },
+    {
+      "category": "Chatear y consultar un video de YouTube",
+      "platforms": "NotebookLM 🆓",
+      "description": "Te permite hacer preguntas sobre el contenido de un video de YouTube sin tener que verlo."
+    },
+    {
+      "category": "Combinar múltiples fuentes como conocimiento",
+      "platforms": "NotebookLM 🆓",
+      "description": "Consolida información de varios documentos y fuentes para construir una base de conocimiento unificada."
+    },
+    {
+      "category": "Voz a texto",
+      "platforms": "ChatGPT “mic” 🆓",
+      "description": "Transcribe palabras habladas a texto de forma rápida y precisa."
+    },
+    {
+      "category": "Contenido estilo infografía",
+      "platforms": "Gemini 2.5 + Canvas 🆓",
+      "description": "Genera contenido visualmente atractivo similar a las infografías para presentar datos."
+    },
+    {
+      "category": "Generación e interpretación de imágenes",
+      "platforms": "GPT4o 🆓",
+      "description": "Crea imágenes a partir de prompts de texto y puede identificar texto u objetos dentro de las imágenes."
+    },
+    {
+      "category": "Generación de video",
+      "platforms": "Veo 3 + Flow (Google)",
+      "description": "Genera clips de video a partir de prompts de texto o imágenes."
+    },
+    {
+      "category": "Compartir mi pantalla para recibir consejos",
+      "platforms": "Google AI Studio 🆓",
+      "description": "Permite que una IA vea tu pantalla y te brinde ayuda y consejos contextuales."
+    },
+    {
+      "category": "Investigación sobre datos en tiempo real (X)",
+      "platforms": "Grok 3 🆓",
+      "description": "Especializado en acceder y procesar datos en tiempo real de plataformas sociales como X."
+    },
+    {
+      "category": "Leer en voz alta",
+      "platforms": "ElevenLabs (ElevenReader mobile) 🆓",
+      "description": "Convierte texto escrito en voz con sonido natural."
+    },
+    {
+      "category": "Probar la respuesta de varios modelos",
+      "platforms": "Poe 🆓",
+      "description": "Una plataforma para comparar respuestas de múltiples modelos de IA al mismo prompt."
+    },
+    {
+      "category": "Chats preconfigurados",
+      "platforms": "GPTs on ChatGPT o Bots en Poe",
+      "description": "Bots o agentes personalizables preconfigurados para tareas o dominios específicos."
+    },
+    {
+      "category": "Infografías para diapositivas",
+      "platforms": "napkin.ai 🆓",
+      "description": "Crea infografías y visuales de aspecto profesional específicamente para presentaciones."
+    },
+    {
+      "category": "Pasos múltiples / Agentes",
+      "platforms": "Manus 🆓",
+      "description": "Para tareas complejas que requieren que una IA realice una secuencia de acciones o pasos."
+    },
+    {
+      "category": "Podcast de audio",
+      "platforms": "NotebookLM 🆓",
+      "description": "Analiza y resume contenido de audio como podcasts, permitiéndote consultarlos."
+    },
+    {
+      "category": "Jugar con la configuración de LLM",
+      "platforms": "OpenAI Playground o Google AI Studio 🆓",
+      "description": "Entornos de prueba para que los desarrolladores y entusiastas experimenten con los parámetros del modelo."
+    },
+    {
+      "category": "Proyectos con múltiples chats y archivos",
+      "platforms": "Claude Project o ChatGPT Projects",
+      "description": "Gestiona proyectos complejos con múltiples conversaciones y archivos subidos en un único espacio de trabajo."
+    },
+    {
+      "category": "Código",
+      "platforms": "Claude Sonnet 4 / Gemini 2.5 Pro / GPT o3 & 4.1",
+      "description": "Para escribir, depurar y entender código en varios lenguajes de programación."
+    },
+    {
+      "category": "Codificar y ejecutar apps simples",
+      "platforms": "Gemini 2.5 Pro + Canvas",
+      "description": "Entorno integrado para codificar y ejecutar aplicaciones simples de inmediato."
+    },
+    {
+      "category": "Generación de música",
+      "platforms": "Suno + Lalal.ai + Kits.ai 🆓",
+      "description": "Crea música original, separa pistas y genera voces de IA para canciones."
+    }
+  ],
+  "footer": {
+    "disclaimer": "13/Jun/2025 / Descargo de responsabilidad: esto puede cambiar en una semana",
+    "free_tier_note": "🆓 = tiene una versión gratuita"
+  }
+}
