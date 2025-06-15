@@ -1,0 +1,141 @@
+{
+  "title": "Hyperproductivity with GenAI",
+  "subtitle": "Curated apps, models, and platforms based on insights and preferences by @emangare.",
+  "details_prompt": "Click to view details",
+  "tools": [
+    {
+      "category": "Text, quick and simple cases",
+      "platforms": "GPT 4o 🆓",
+      "description": "Ideal for quick replies, summaries, and simple text tasks where speed is key."
+    },
+    {
+      "category": "Creative, human, empathic text",
+      "platforms": "GPT 4.5 or Claude Sonnet",
+      "description": "For drafts that need a more human touch, such as emails, scripts, or social media content."
+    },
+    {
+      "category": "Text co‑editing",
+      "platforms": "GPT 4o + Canvas 🆓",
+      "description": "Perfect for real‑time collaborative editing. The AI suggests and corrects as you write."
+    },
+    {
+      "category": "Difficult questions, reasoning, problem solving",
+      "platforms": "GPT o3 / o3-pro",
+      "description": "Use it for complex problems that require deep analysis, logic, and multiple steps of reasoning."
+    },
+    {
+      "category": "Deep research",
+      "platforms": "ChatGPT 🆓",
+      "description": "When you need to research a topic in depth, connecting and analyzing information from multiple sources."
+    },
+    {
+      "category": "Search + LLM",
+      "platforms": "Perplexity 🆓",
+      "description": "Combines traditional search with conversational AI for more direct answers."
+    },
+    {
+      "category": "Voice conversation",
+      "platforms": "ChatGPT Advanced Voice",
+      "description": "For natural, real‑time voice conversations with an AI."
+    },
+    {
+      "category": "Chat and query a YouTube video",
+      "platforms": "NotebookLM 🆓",
+      "description": "Allows you to ask questions about a YouTube video's content without having to watch it."
+    },
+    {
+      "category": "Combine multiple sources as knowledge",
+      "platforms": "NotebookLM 🆓",
+      "description": "Consolidates information from multiple documents and sources to build a unified knowledge base."
+    },
+    {
+      "category": "Voice to text",
+      "platforms": "ChatGPT \"mic\" 🆓",
+      "description": "Quickly and accurately transcribes spoken words into text."
+    },
+    {
+      "category": "Infographic‑style content",
+      "platforms": "Gemini 2.5 + Canvas 🆓",
+      "description": "Generates visually appealing infographic‑like content to present data."
+    },
+    {
+      "category": "Image generation and interpretation",
+      "platforms": "GPT4o 🆓",
+      "description": "Creates images from text prompts and can identify text or objects within images."
+    },
+    {
+      "category": "Video generation",
+      "platforms": "Veo 3 + Flow (Google)",
+      "description": "Generates video clips from text or image prompts."
+    },
+    {
+      "category": "Share my screen for advice",
+      "platforms": "Google AI Studio 🆓",
+      "description": "Allows an AI to view your screen and provide contextual help and advice."
+    },
+    {
+      "category": "Real‑time data research (X)",
+      "platforms": "Grok 3 🆓",
+      "description": "Specialized in accessing and processing real‑time data from social platforms like X."
+    },
+    {
+      "category": "Read aloud",
+      "platforms": "ElevenLabs (ElevenReader mobile) 🆓",
+      "description": "Converts written text into natural‑sounding speech."
+    },
+    {
+      "category": "Test responses from multiple models",
+      "platforms": "Poe 🆓",
+      "description": "A platform to compare responses from multiple AI models to the same prompt."
+    },
+    {
+      "category": "Preconfigured chats",
+      "platforms": "GPTs on ChatGPT or Bots in Poe",
+      "description": "Customizable bots or agents preconfigured for specific tasks or domains."
+    },
+    {
+      "category": "Infographics for slides",
+      "platforms": "napkin.ai 🆓",
+      "description": "Creates professional‑looking infographics and visuals specifically for presentations."
+    },
+    {
+      "category": "Multi‑step / agents",
+      "platforms": "Manus 🆓",
+      "description": "For complex tasks that require an AI to perform a sequence of actions or steps."
+    },
+    {
+      "category": "Audio podcast",
+      "platforms": "NotebookLM 🆓",
+      "description": "Analyzes and summarizes audio content such as podcasts, allowing you to query them."
+    },
+    {
+      "category": "Play with LLM settings",
+      "platforms": "OpenAI Playground or Google AI Studio 🆓",
+      "description": "Sandbox environments for developers and enthusiasts to experiment with model parameters."
+    },
+    {
+      "category": "Projects with multiple chats and files",
+      "platforms": "Claude Project or ChatGPT Projects",
+      "description": "Manages complex projects with multiple conversations and uploaded files in a single workspace."
+    },
+    {
+      "category": "Code",
+      "platforms": "Claude Sonnet 4 / Gemini 2.5 Pro / GPT o3 & 4.1",
+      "description": "For writing, debugging, and understanding code in various programming languages."
+    },
+    {
+      "category": "Code and run simple apps",
+      "platforms": "Gemini 2.5 Pro + Canvas",
+      "description": "Integrated environment to code and run simple applications instantly."
+    },
+    {
+      "category": "Music generation",
+      "platforms": "Suno + Lalal.ai + Kits.ai 🆓",
+      "description": "Creates original music, separates tracks, and generates AI voices for songs."
+    }
+  ],
+  "footer": {
+    "disclaimer": "13/Jun/2025 / Disclaimer: this could change in a week",
+    "free_tier_note": "🆓 = has a free tier"
+  }
+}
